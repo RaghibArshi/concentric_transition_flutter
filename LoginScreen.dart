@@ -1,0 +1,40 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Login Screen',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25
+              ),
+            ),
+            const SizedBox(height: 50,),
+            const Text(
+              'Thanks For Watching...',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20
+              ),
+            ),
+            Image.asset('assets/subscribe.gif'),
+          ],
+        ),
+      ),
+    );
+  }
+}
